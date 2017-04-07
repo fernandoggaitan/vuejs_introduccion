@@ -42,7 +42,9 @@
 				<div v-if="personajes.length > 0">					
 					<ul>
 						<li v-for="p in personajes">
-							<input type="checkbox" v-model="p.seleccionado" /> {{ p.nombre }}
+							<label>
+								<input type="checkbox" v-model="p.seleccionado" /> {{ p.nombre }}
+							</label>
 						</li>
 					</ul>
 					<a href="javascript:void(0);" class="text text-error" v-on:click="eliminarPersonajes()"> Eliminar Personajes </a>
