@@ -1,0 +1,23 @@
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title> Ejemplo de Vue.js </title>
+</head>
+<body>
+	<div id="app">
+		<h1> {{ nombre }} {{ apellido }} </h1>
+		<input type="text" placeholder="Ingrese su nombre" v-model="nombre" />
+		<input type="text" placeholder="Ingrese su apellido" v-model="apellido" />
+	</div>
+	<script type="text/javascript" src="../js/vue.js"></script>
+	<script type="text/javascript">
+		var app = new Vue({
+			el: '#app',
+			data: {
+				nombre: 'Lalo',
+				apellido: 'Landa'
+			}
+		});
+	</script>
+</body>
+</html>

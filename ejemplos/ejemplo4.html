@@ -1,0 +1,37 @@
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title> Ejemplo de Vue.js </title>
+</head>
+<body>
+	<div id="app">		
+		<ul>
+			<li v-for="item in lista">
+				{{ item.nombre }} / {{ item.pais }}
+			</li>
+		</ul>
+	</div>
+	<script type="text/javascript" src="../js/vue.js"></script>
+	<script type="text/javascript">
+		var app = new Vue({
+			el: '#app',
+			data: {
+				lista: [
+					{nombre: 'Lionel Messi', pais: 'Argentina'},
+					{nombre: 'Luis Suárez', pais: 'Uruguay'},
+					{nombre: 'Neymar', pais: 'Brasil'},					
+					{nombre: 'James Rodríguez', pais: 'Colombia'},
+					{nombre: 'Andrés Iniesta', pais: 'España'},
+					{nombre: 'Chicharito Hernández', pais: 'México'},					
+					{nombre: 'Alexis Sánchez', pais: 'Chile'},
+					{nombre: 'Paolo Guerrero', pais: 'Perú'},
+					{nombre: 'Paraguay', pais: 'Justo Villar'},
+					{nombre: 'Marcelo Moreno Martins', pais: 'Bolivia'},
+					{nombre: 'Walter Ayoví', pais: 'Ecuador'},
+					{nombre: 'Salomón Rondón', pais: 'Venezuela'},
+				]
+			}
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title> Ejemplo de Vue.js </title>
+</head>
+<body>
+	<div id="app">		
+		<label>
+			<input type="checkbox" v-model="imagen_visible" />
+			Mostrar / Ocultar imagen
+		</label>
+		<br />
+		<img v-if="imagen_visible" src="logo.png" alt="" />
+	</div>
+	<script type="text/javascript" src="../js/vue.js"></script>
+	<script type="text/javascript">
+		var app = new Vue({
+			el: '#app',
+			data: {
+				imagen_visible: true
+			}
+		});
+	</script>
+</body>
+</html>
